@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Virtual library</title>
+  </head>
+  <body>
+    <form action="" method="get" id="main-form">
+      <p class="add-book">Add a book to the library:</p>
+      <div class="main-form-container">
+        <div class="main-form-container-title form-item">
+          <label for="title">Book title</label>
+          <input required type="text" id="title" name="title" maxlength="30" />
+        </div>
+        <div class="main-form-container-author form-item">
+          <label for="author">Book author</label>
+          <input required type="text" id="author" name="author" maxlength="30" />
+        </div>
+        <div class="main-form-container-pages form-item">
+          <label for="pages">Number of pages</label>
+          <input required type="number" id="pages" name="pages" max="999999" />
+        </div>
+        <div class="main-form-container-radio">
+          <p>Have you already read it?</p>
+          <label for="yes">Yes</label>
+          <input required type="radio" id="readYes" name="read" value="Yes" />
+          <label for="no">No</label>
+          <input required type="radio" id="readYes" name="read" value="No" />
+        </div>
+      </div>
+      <button class="submit-btn form-item" type="submit">Add book</button>
+      <hr />
+      <div class="library-container">
+        <p class="your-books">Your books:</p>
+        <table id="books-table">
+          <tr>
+            <th id="table-title">Title</th>
+            <th id="table-author">Author</th>
+            <th id="table-pages">Pages</th>
+            <th id="table-read">Read</th>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>
